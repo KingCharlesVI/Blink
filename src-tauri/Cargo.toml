@@ -16,9 +16,9 @@ tauri-build = { version = "2.0.0-beta", features = [] }
 
 [dependencies]
 log = "^0.4.21"
-serde_json = "1.0"
-serde = { version = "1.0", features = ["derive"] }
-tauri = { version = "2.0.0-beta", features = [ "devtools"] }
+serde_json = "1.0.134"
+serde = { version = "1.0.216", features = ["derive"] }
+tauri = { version = "2.1.1", features = ["devtools"] }
 tauri-plugin-localhost = { git = "https://github.com/tauri-apps/plugins-workspace", branch = "v2" }
 tauri-plugin-store = { git = "https://github.com/tauri-apps/plugins-workspace", branch = "v2" }
 tauri-plugin-log = { git = "https://github.com/tauri-apps/plugins-workspace", branch = "v2", features = ["colored"] }
@@ -26,10 +26,12 @@ tauri-plugin-window-state = { git = "https://github.com/tauri-apps/plugins-works
 portpicker = "0.1" # used in the example to pick a random free port
 tauri-plugin-process = { git = "https://github.com/tauri-apps/plugins-workspace", branch = "v2" }
 tauri-plugin-updater = { git = "https://github.com/tauri-apps/plugins-workspace", branch = "v2" }
-tauri-plugin-clipboard-manager = "2.1.0-beta.6"
-tauri-plugin-notification = "2.0.0-rc.1"
-tauri-plugin-upload = "2.0.0"
-tauri-plugin-dialog = "2.0.0"
+tauri-plugin-clipboard-manager = "2.2.0"
+tauri-plugin-notification = "2.2.0"
+tauri-plugin-upload = "2.2.1"
+tauri-plugin-dialog = "2.2.0"
+reqwest = "0.12.9"
+tokio = { version = "1.42.0", features = ["full"] }
 
 [features]
 # by default Tauri runs in production mode
